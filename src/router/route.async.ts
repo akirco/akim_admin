@@ -5,21 +5,30 @@ const asyncRoutes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'home',
+    redirect: '/home/index',
     meta: {
       title: '',
       icon: '',
     },
-    component: () => import('@/views/home/index.vue'),
+    component: () => import('@/views/home/indexPage.vue'),
     children: [
       {
         path: '/home/index',
-        redirect: '/home/index',
-        name: 'main',
+        name: 'analysis',
         meta: {
           title: '',
           icon: '',
         },
-        component: () => import('@/views/home/index.vue'),
+        component: () => import('@/views/analysis/analysisPage.vue'),
+      },
+      {
+        path: '/home/workbench',
+        name: 'workbench',
+        meta: {
+          title: '',
+          icon: '',
+        },
+        component: () => import('@/views/workbench/workBench.vue'),
       },
     ],
   },

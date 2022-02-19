@@ -5,12 +5,20 @@
 declare module 'vue' {
   export interface GlobalComponents {
     Aside_nav: typeof import('./components/aside_nav.vue')['default']
+    CardExplore: typeof import('./components/card-explore.vue')['default']
+    CardProjects: typeof import('./components/card-projects.vue')['default']
+    CardShortcut: typeof import('./components/card-shortcut.vue')['default']
+    DataCard: typeof import('./components/data-card.vue')['default']
     ElAside: typeof import('element-plus/es')['ElAside']
     ElAvatar: typeof import('element-plus/es')['ElAvatar']
     ElBreadcrumb: typeof import('element-plus/es')['ElBreadcrumb']
     ElBreadcrumbItem: typeof import('element-plus/es')['ElBreadcrumbItem']
+    ElButton: typeof import('element-plus/es')['ElButton']
+    ElCard: typeof import('element-plus/es')['ElCard']
     ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
     ElContainer: typeof import('element-plus/es')['ElContainer']
+    ElDescriptions: typeof import('element-plus/es')['ElDescriptions']
+    ElDescriptionsItem: typeof import('element-plus/es')['ElDescriptionsItem']
     ElDropdown: typeof import('element-plus/es')['ElDropdown']
     ElDropdownItem: typeof import('element-plus/es')['ElDropdownItem']
     ElDropdownMenu: typeof import('element-plus/es')['ElDropdownMenu']
@@ -25,7 +33,9 @@ declare module 'vue' {
     EnProcess: typeof import('./components/EnProcess.md')['default']
     Head_nav: typeof import('./components/head_nav.vue')['default']
     NavTab: typeof import('./components/nav-tab.vue')['default']
+    PvTab: typeof import('./components/pv-tab.vue')['default']
     TheFooter: typeof import('./components/TheFooter.vue')['default']
+    TopInfo: typeof import('./components/top-info.vue')['default']
     ZhProcess: typeof import('./components/ZhProcess.md')['default']
   }
 }

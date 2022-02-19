@@ -9,6 +9,9 @@
       </el-header>
       <el-main>
         <NavTab></NavTab>
+        <div class="main-container">
+          <router-view></router-view>
+        </div>
       </el-main>
     </el-container>
   </el-container>
@@ -40,5 +43,14 @@ const { t } = useI18n();
   color: #333;
   text-align: center;
   --el-main-padding: 10px;
+}
+
+.main-container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #e4e7ed;
+  background-color: white;
 }
 </style>

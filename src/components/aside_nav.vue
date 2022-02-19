@@ -6,7 +6,7 @@
     @open="handleOpen"
     @close="handleClose"
     text-color="#99a3b8"
-    background-color="#001529"
+    background-color="#1d232f"
   >
     <el-menu-item class="logo" index="home">
       <el-icon :size="100"><akim /></el-icon>
@@ -15,18 +15,21 @@
     <el-sub-menu index="1">
       <template #title>
         <el-icon><icon-menu /></el-icon>
-        <span>导航一</span>
+        <span>Dashboard</span>
       </template>
-      <el-menu-item index="1-1">菜单一</el-menu-item>
-      <el-menu-item index="1-2">菜单一</el-menu-item>
+      <el-menu-item index="1-1"><router-link to="/">分析页</router-link></el-menu-item>
+      <el-menu-item index="1-2"><router-link to="/home/workbench">工作台</router-link></el-menu-item>
     </el-sub-menu>
     <el-sub-menu index="2">
       <template #title>
         <el-icon><icon-menu /></el-icon>
-        <span>导航一</span>
+        <span>系统管理</span>
       </template>
-      <el-menu-item index="2-1">菜单一</el-menu-item>
-      <el-menu-item index="2-2">菜单一</el-menu-item>
+      <el-menu-item index="permission">权限管理</el-menu-item>
+      <el-menu-item index="account">账号管理</el-menu-item>
+      <el-menu-item index="role">角色管理</el-menu-item>
+      <el-menu-item index="menu">菜单管理</el-menu-item>
+      <el-menu-item index="dept">部门管理</el-menu-item>
     </el-sub-menu>
     <el-sub-menu index="3">
       <template #title>
@@ -60,7 +63,7 @@ const handleClose = (key: string, keyPath: string[]) => {
   min-height: 400px;
 }
 .logo:hover {
-  background-color: #001529 !important;
+  background-color: #191919 !important;
 }
 .akim_title {
   font-size: 1.5em;

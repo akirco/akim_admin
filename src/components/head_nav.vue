@@ -59,6 +59,7 @@ const collpase = () => {
   width: 56px;
   height: 56px;
   font-size: 23px;
+  cursor: pointer;
 }
 #lef_icon:hover {
   background-color: #f6f6f6;
@@ -67,6 +68,7 @@ const collpase = () => {
   flex: 1;
   display: flex;
   align-items: center;
+  padding-left: 20px;
 }
 #rig_tools {
   width: 400px;
@@ -74,6 +76,7 @@ const collpase = () => {
   align-items: center;
   justify-content: space-evenly;
   font-size: 23px;
+  cursor: pointer;
 }
 
 .example-showcase .el-dropdown-link {
