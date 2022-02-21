@@ -50,7 +50,6 @@ const { t } = useI18n();
   padding: 0;
   width: 100%;
   height: 100%;
-  border: 1px solid #e4e7ed;
   background-color: white;
 }
 </style>

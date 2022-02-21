@@ -49,7 +49,7 @@
 }
 .mid-info-lt {
   height: 480px;
-  width: 100%;
+  flex: 1;
   background: #e9eef3;
   padding: 20px;
   padding-left: 0;

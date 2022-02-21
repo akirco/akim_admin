@@ -19,12 +19,17 @@
 </template>
 <style>
 .top-info-left {
+  flex: 1;
   display: flex;
   align-items: center;
   padding-left: 20px;
 }
+.el-avatar {
+  flex-shrink: 0;
+}
 .el-descriptions {
   padding-left: 20px;
+  flex-shrink: 0;
 }
 
 .top-info-right {
@@ -33,5 +38,10 @@
   justify-content: space-between;
   align-items: center;
   padding-left: 20px;
+}
+@media screen and (max-width: 952px) {
+  .top-info-right {
+    display: none;
+  }
 }
 </style>

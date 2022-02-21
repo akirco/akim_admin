@@ -32,12 +32,12 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .card-item {
   width: 240px;
-  flex-basis: auto;
-  height: 184px;
+  /* flex-basis: auto; */
+  /* height: 184px; */
   border-radius: 0;
   box-shadow: 1px 0 #f0f0f0, 0 1px #f0f0f0, 1px 1px #f0f0f0, 1px 0 #f0f0f0 inset, 0 1px #f0f0f0 inset;
   transition: all 0.3s;
@@ -51,7 +51,6 @@
 .box-card {
   width: 100%;
   height: 100%;
-  /* border: 1px solid #e4e7ed; */
   background-color: white;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
   border-radius: 4px;

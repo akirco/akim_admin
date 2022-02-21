@@ -18,7 +18,7 @@
         <span>Dashboard</span>
       </template>
       <el-menu-item index="1-1"><router-link to="/">分析页</router-link></el-menu-item>
-      <el-menu-item index="1-2"><router-link to="/home/workbench">工作台</router-link></el-menu-item>
+      <el-menu-item index="1-2"><router-link to="/dashboard/workbench">工作台</router-link></el-menu-item>
     </el-sub-menu>
     <el-sub-menu index="2">
       <template #title>
@@ -26,10 +26,10 @@
         <span>系统管理</span>
       </template>
       <el-menu-item index="permission">权限管理</el-menu-item>
-      <el-menu-item index="account">账号管理</el-menu-item>
-      <el-menu-item index="role">角色管理</el-menu-item>
-      <el-menu-item index="menu">菜单管理</el-menu-item>
-      <el-menu-item index="dept">部门管理</el-menu-item>
+      <el-menu-item index="account"><router-link to="/system/account">账号管理</router-link></el-menu-item>
+      <el-menu-item index="role"><router-link to="/system/role">角色管理</router-link></el-menu-item>
+      <el-menu-item index="menu"><router-link to="/system/menu">菜单管理</router-link></el-menu-item>
+      <el-menu-item index="dept"><router-link to="/system/dept">部门管理</router-link></el-menu-item>
     </el-sub-menu>
     <el-sub-menu index="3">
       <template #title>

@@ -5,7 +5,7 @@ const asyncRoutes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'home',
-    redirect: '/home/index',
+    redirect: '/dashboard/index',
     meta: {
       title: '',
       icon: '',
@@ -13,7 +13,7 @@ const asyncRoutes: Array<RouteRecordRaw> = [
     component: () => import('@/views/home/indexPage.vue'),
     children: [
       {
-        path: '/home/index',
+        path: '/dashboard/index',
         name: 'analysis',
         meta: {
           title: '',
@@ -22,13 +22,49 @@ const asyncRoutes: Array<RouteRecordRaw> = [
         component: () => import('@/views/analysis/analysisPage.vue'),
       },
       {
-        path: '/home/workbench',
+        path: '/dashboard/workbench',
         name: 'workbench',
         meta: {
           title: '',
           icon: '',
         },
         component: () => import('@/views/workbench/workBench.vue'),
+      },
+      {
+        path: '/system/account',
+        name: 'account',
+        meta: {
+          title: '',
+          icon: '',
+        },
+        component: () => import('@/views/system/accountPage.vue'),
+      },
+      {
+        path: '/system/role',
+        name: 'role',
+        meta: {
+          title: '',
+          icon: '',
+        },
+        component: () => import('@/views/system/rolePage.vue'),
+      },
+      {
+        path: '/system/menu',
+        name: 'menu',
+        meta: {
+          title: '',
+          icon: '',
+        },
+        component: () => import('@/views/system/menuPage.vue'),
+      },
+      {
+        path: '/system/dept',
+        name: 'dept',
+        meta: {
+          title: '',
+          icon: '',
+        },
+        component: () => import('@/views/system/deptPage.vue'),
       },
     ],
   },
